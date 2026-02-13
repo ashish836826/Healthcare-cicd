@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_HUB = "ashish7840"
         IMAGE_NAME = "my-node-app"
-        IMAGE_TAG = "82"
+        IMAGE_TAG = "83"
     }
 
     stages {
@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/ashish836826/web-cd.git'
+                    url: 'https://github.com/ashish836826/Healthcare-cicd.git'
             }
         }
 
